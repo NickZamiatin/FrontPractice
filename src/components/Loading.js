@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 export class Loading extends Component {
   render() {
@@ -10,7 +11,7 @@ export class Loading extends Component {
   <hr className="my-4"/>
   <p>It uses utility classNamees for typography and spacing to space content out within the larger container.</p>
   <p className="lead">
-    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <Link   to="/events" className="btn btn-primary btn-lg" href="#" role="button">Learn more</Link>
   </p>
 </div>
     </div>

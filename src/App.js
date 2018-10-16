@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import {Switch, Route} from 'react-router-dom'
 import Header from './components/Header';
 import { Loading } from './components/Loading';
-import {Switch, Route} from 'react-router-dom'
 import NotFound from './components/NotFound';
+import Events from './containers/Events';
 
 class App extends Component {
   render() {
@@ -12,10 +13,10 @@ class App extends Component {
       <Header />
       <main className="container">
       <Switch>
-        <Route   exact path="/" component={Loading}/>
+        <Route exact path="/" component={Loading}/>
+        <Route path="/events" component={Events}/>
         <Route path="*" component={NotFound} />
       </Switch>
-      {/* <Loading /> */}
       </main>
       </div>
     );
