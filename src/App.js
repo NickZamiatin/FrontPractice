@@ -5,13 +5,14 @@ import Header from './components/Header';
 import { Loading } from './components/Loading';
 import NotFound from './components/NotFound';
 import Events from './containers/Events';
+import { black } from 'ansi-colors';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
       <Header />
-      <main className="container">
+      <main className="container" >
       <Switch>
         <Route exact path="/" component={Loading}/>
         <Route path="/events" component={Events}/>
